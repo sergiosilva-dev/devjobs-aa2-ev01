@@ -22,4 +22,12 @@ public class ConnectionFactory {
                 P.getProperty("DB_USER"),
                 P.getProperty("DB_PASSWORD"));
     }
+
+    public static boolean ping() {
+        try (Connection c = get()) {
+            return c.isValid(2);
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }
