@@ -36,7 +36,7 @@ public class App {
         case "5" -> delete();
         case "0" -> {
           System.out.println("CRUD de Job Offers funcionando correctamente");
-          System.out.println("¡Gracias por usar DevJobs!"); 
+          System.out.println("¡Hasta luego!");
           return;
         }
         default -> System.out.println("Opción inválida.");
