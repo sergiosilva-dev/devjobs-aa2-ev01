@@ -35,6 +35,7 @@ public class App {
         case "4" -> updateTitle();
         case "5" -> delete();
         case "0" -> {
+          System.out.println("CRUD de Job Offers funcionando correctamente");
           System.out.println("¡Hasta luego!");
           return;
         }
