@@ -15,6 +15,7 @@ public class App {
 
   public static void main(String[] args) {
     System.out.println("DevJobs AA2-EV01 - CRUD JDBC\n");
+    System.out.println("Ping DB: " + com.devjobs.config.ConnectionFactory.ping());
     while (true) {
       System.out.println("""
           Menú
